@@ -1,7 +1,7 @@
 import React from "react";
-import Card from "./Card";
+import Cards from "./Cards";
 
-describe("Card tests", () => {
+describe("Cards tests", () => {
   let component;
 
   beforeEach(() => {
