@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "./Cards.module.scss";
+// import styles from "./Cards.module.scss";
 import { useState, useEffect } from "react";
-import { Card, ListGroup, ListGroupItem } from "react-bootstrap";
+import { Card, CardGroup } from "react-bootstrap";
 
 const Cards = props => {
 
@@ -33,19 +33,28 @@ const Cards = props => {
     .catch((err) => console.log(err));
   };
 
-
-
   return (
 <>
-  <Card style={{ width: '18rem' }}>
-    <Card.Title>{name}</Card.Title>
-    <ListGroup variant="flush">
-      <ListGroupItem>{`Temperature: ${temperature}`}</ListGroupItem>
-      <ListGroupItem>{`Humidity: ${humidity}`}</ListGroupItem>
-      <ListGroupItem>{`Min temp: ${minTemp}`}</ListGroupItem>
-      <ListGroupItem>{`Max temp: ${maxTemp}`}</ListGroupItem>
-    </ListGroup>
+<CardGroup>
+  <Card>
+    <Card.Img variant="top" src={image} />
+    <Card.Body>
+      <Card.Title>{name}</Card.Title>
+      <Card.Text>
+      {`Temperature : ${temperature}`}
+      </Card.Text>
+      <Card.Text>
+      {`Humidity: ${humidity}%`}
+      </Card.Text>
+      <Card.Text>
+      {`Min temp: ${minTemp}`}
+      </Card.Text>
+      <Card.Text>
+      {`Max temp : ${maxTemp}`}
+      </Card.Text>
+    </Card.Body>
   </Card>
+</CardGroup>  
 </>
   );
 };
