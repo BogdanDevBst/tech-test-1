@@ -1,7 +1,7 @@
 import React from "react";
-// import styles from "./Cards.module.scss";
+import styles from "./Cards.module.scss";
 import { useState, useEffect } from "react";
-import { Card, CardGroup } from "react-bootstrap";
+// import { Card, CardGroup } from "react-bootstrap";
 
 const Cards = props => {
 
@@ -35,26 +35,15 @@ const Cards = props => {
 
   return (
 <>
-<CardGroup>
-  <Card>
-    <Card.Img variant="top" src={image} />
-    <Card.Body>
-      <Card.Title>{name}</Card.Title>
-      <Card.Text>
-      {`Temperature : ${temperature}`}
-      </Card.Text>
-      <Card.Text>
-      {`Humidity: ${humidity}%`}
-      </Card.Text>
-      <Card.Text>
-      {`Min temp: ${minTemp}`}
-      </Card.Text>
-      <Card.Text>
-      {`Max temp : ${maxTemp}`}
-      </Card.Text>
-    </Card.Body>
-  </Card>
-</CardGroup>  
+<div className={styles.content} style={{ backgroundImage: `url(${image})` }}>
+  <div className={styles.text}>
+    <h2>{name}</h2>
+    <h3>{`Temperature : ${temperature}°C`}</h3>
+    <h3>{`Humidity: ${humidity}%`}</h3>
+    <h3>{`Min temp : ${maxTemp}°C`}</h3>
+    <h3>{`Max temp: ${minTemp}°C`}</h3>
+  </div>
+</div>
 </>
   );
 };

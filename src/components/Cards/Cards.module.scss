@@ -5,6 +5,22 @@
 }
 
 .content {
-    display: flex;
-    flex-direction: row;
+    width: 600px;
+    height: 300px;
+    border: white solid 3px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 10px;
+   
+    
+    h2, h3 {
+        display: block;
+        color: white;
+        font-size: 1rem;
+    }
+    
+    h2 {
+        font-size: xx-large;
+    }
+
 }
