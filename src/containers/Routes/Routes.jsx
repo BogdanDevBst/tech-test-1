@@ -8,11 +8,11 @@ import FootballTeamOrg from "../FootballTeamOrg";
 const Routes = () => {
   return (
     <>
-      {/* <Router>
-        <WeatherApi path="weather-page/" />
-        <QuestionQuizz path="quizz-page/" />
-        <FootballTeamOrg path="football-page/" />
-      </Router> */}
+      <Router noThrow from="/" to="weather-page">
+        <WeatherApi path="weather-page" />
+        <QuestionQuizz path="quizz-page" />
+        <FootballTeamOrg path="football-page" />
+      </Router>
     </>
   );
 };

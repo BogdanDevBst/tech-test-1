@@ -3,12 +3,16 @@ import styles from "./App.module.scss";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 // import Routes from "./containers/Routes";
-import WeatherApi from "./containers/WeatherApi";
+import FootballTeamOrg from "./containers/FootballTeamOrg";
+import QuestionQuizz from "./containers/QuestionQuizz/QuestionQuizz";
+// import WeatherApi from "./containers/WeatherApi";
 
 const App = () => {
   return (
     <>
-      <WeatherApi />
+      {/* <Routes /> */}
+      {/* <FootballTeamOrg /> */}
+      <QuestionQuizz />
     </>
   );
 }

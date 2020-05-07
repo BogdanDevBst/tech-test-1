@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./QuestionQuizz.module.scss";
 
+
 const QuestionQuizz = () => {
   return (
     <>
