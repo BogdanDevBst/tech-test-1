@@ -8,10 +8,10 @@ import FootballTeamOrg from "../FootballTeamOrg";
 const Routes = () => {
   return (
     <>
-      <Router noThrow from="/" to="weather-page">
-        <WeatherApi path="weather-page" />
-        <QuestionQuizz path="quizz-page" />
-        <FootballTeamOrg path="football-page" />
+      <Router>
+        <WeatherApi path="weather" />
+        <QuestionQuizz path="quiz" />
+        <FootballTeamOrg path="football" />
       </Router>
     </>
   );

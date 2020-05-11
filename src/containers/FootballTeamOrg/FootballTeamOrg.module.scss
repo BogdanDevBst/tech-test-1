@@ -1,0 +1,26 @@
+.pitch {
+    display: flex;
+    height: 100%;
+    width: 100vw;
+    overflow-y: hidden;
+
+    .selctionTable {
+        width: 45%;
+        display: flex; 
+        justify-content: space-around;
+        flex-wrap: wrap;
+        overflow-y: hidden;
+    }
+
+    .mySelectedTeam {
+        height: 100%;
+        width: 50%; 
+        margin: 0 auto;
+        background-position: top;
+        background-repeat: no-repeat;
+        // background-image: url("../../Images/pitch.png");
+        padding: 24px; 
+        font-weight: bold;
+        overflow-y: hidden;
+    }
+}
